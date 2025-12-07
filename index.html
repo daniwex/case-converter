@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <div class="title">Case Converter</div>
+    <label for="textarea"></label>
+    <textarea name="" id="textarea"></textarea>
+    <div id="controls">
+        <button id="upper-case" onclick="resolveContent('upper-case')">
+            Upper Case
+        </button>
+        <button id="lower-case" onclick="resolveContent('lower-case')">
+            Lower Case
+        </button>
+        <button id="proper-case" onclick= "resolveContent('proper-case')">
+            Proper Case
+        </button>
+        <button id="sentence-case" onclick="resolveContent('sentence-case')">
+            Sentence Case
+        </button>
+        <button onclick="openAlert()">
+            download
+        </button>
+    </div>
+</div>
+
+<div id="alert" class="alert hidden">
+    <div class="content">
+        <div class="message">
+            <label title="file name">
+                <span>File name</span>
+                <input id="file-name" type="text" />
+            </label>
+            <div>
+                <button id="save-text-file" onclick="startDownload()">Save</button>
+                <button onclick="closeAlert()">Cancel</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<script src="ext.js"></script>
+<script src="script.js" defer></script>
+</body>
+</html>
